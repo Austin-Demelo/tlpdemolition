@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback — ensures any direct/deep link still serves index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
